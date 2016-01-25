@@ -7,9 +7,31 @@
    	<script src="js/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
-  	<div id="siled" class="positive-fx"></div>
-  	<div class="">
+  	<div id="contert">
   		
   	</div>
   </body>
+  <script type="text/javascript">
+  	
+  	jQuery(function(){
+  		var bodyWidth = document.body.clientWidth,
+  			bodyHeight = document.body.clientHeight;
+  		bodyEsize(bodyWidth,bodyHeight);
+  	});
+  	
+  	$(window).resize(function(){
+  		var bodyWidth = document.body.clientWidth,
+  			bodyHeight = document.body.clientHeight;
+  		bodyEsize(bodyWidth,bodyHeight);
+  	});
+
+  	
+  	function bodyEsize(bodyWidth,bodyHeight){
+  		$("#contert").css({
+  			'width': bodyWidth,
+  			'height':bodyHeight
+  		});
+  	}
+  	
+  </script>
 </html>
